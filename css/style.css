@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("animations.css");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+  margin: 0;
+  font-size: 8.75em;
+  line-height: 1;
+}
+.text__wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.text__wrapper .about,
+.work,
+.contact {
+  max-width: fit-content;
+}
+.about,
+.work,
+.contact {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.about:hover,
+.work:hover,
+.contact:hover {
+  padding-left: 50px;
+}
+.about {
+  animation: scale-up-ver-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s
+    both;
+}
+
+.work {
+  animation: scale-up-ver-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s
+    both;
+}
+.contact {
+  animation: scale-up-ver-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s
+    both;
+}
+.text__wrapper a {
+  width: fit-content;
+}
