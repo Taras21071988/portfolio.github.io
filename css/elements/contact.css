@@ -1,0 +1,190 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.main {
+  margin-top: 20vh;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 20px;
+  border: 3px solid rgb(0, 0, 0);
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.content {
+  width: 75vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+.contact__content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+}
+.contact__title {
+  line-height: 140%;
+  font-size: var(--fs-xl);
+}
+/* .contact__subtitle {
+
+} */
+/* .contact__text {
+} */
+
+.home__link {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+}
+
+
+
+.link__btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+}
+
+.link__btn span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.link__btn span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.link__btn:hover,
+.link__btn:focus {
+  background: black;
+}
+
+.link__btn:hover span,
+.link__btn:focus span {
+  color: var(--hover-btn-color);
+}
+
+.link__btn:hover span::before,
+.link__btn:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: ".@";
+  }
+
+  10% {
+    content: "^{@#";
+  }
+
+  15% {
+    content: "-!3#";
+  }
+
+  20% {
+    content: "#$_T#";
+  }
+
+  25% {
+    content: "№:0";
+  }
+
+  30% {
+    content: "#{+.";}35%{content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@";
+  }
+
+  45% {
+    content: ",^!3";
+  }
+
+  50% {
+    content: "2@%1";
+  }
+
+  55% {
+    content: "}]23";
+  }
+
+  60% {
+    content: "{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
