@@ -1,7 +1,7 @@
 :root {
   --bg-color: #000;
-  --text-color: #eee;
-  --text-accent-color:#e01c1c;
+  --text-color: #eeee;
+  --text-accent-color: #e01c1c;
   --fs-xxl: clamp(4em, 7vw, 8.75em);
   --fs-xl: clamp(2em, 6vw, 7.75em);
   --fs-l: clamp(1.3em, 2.5vw, 5.75em);
