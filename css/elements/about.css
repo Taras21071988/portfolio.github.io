@@ -1,0 +1,13 @@
+.about__title {
+}
+
+.about__link {
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+.about__link:hover,
+.about__link:focus {
+  padding-left: 15px;
+  color: var(--text-accent-color);
+  transform: scale(1.1);
+}

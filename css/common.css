@@ -1,6 +1,6 @@
 :root {
   --bg-color: #000;
-  --text-color: #eeee;
+  --text-color: #eee;
   --text-accent-color: #e01c1c;
   --fs-xxl: clamp(4em, 7vw, 8.75em);
   --fs-xl: clamp(2em, 6vw, 7.75em);
@@ -28,6 +28,9 @@
 }
 .mb-5 {
   margin-bottom: 5vh;
+}
+.mb-10 {
+  margin-bottom: 10vh;
 }
 .mb-20 {
   margin-bottom: 20vh;
