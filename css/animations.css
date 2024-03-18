@@ -159,3 +159,58 @@
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes about_title {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.1;
+    transform: scale(0.1, 1);
+  }
+  10% {
+    opacity: 0.1;
+    transform: scale(0.2, 1);
+  }
+  20% {
+    opacity: 0.1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5, 1);
+  }
+  60% {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+  70% {
+    opacity: 0.6;
+    transform: scale(0.8, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes opas {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes about_opas {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

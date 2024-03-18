@@ -113,17 +113,3 @@ body::-webkit-scrollbar-thumb {
   animation: chitchat linear both var(--btn-animation-duration);
 }
 
-@keyframes opas {
-  from {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  50% {
-    opacity: 0.3;
-    transform: translateX(100px);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
