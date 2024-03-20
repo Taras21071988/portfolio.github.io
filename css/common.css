@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #000;
+  --bg-color: #0c0c0c;
   --text-color: #eee;
   --text-accent-color: #e01c1c;
   --fs-xxl: clamp(4em, 7vw, 8.75em);
@@ -22,7 +22,9 @@
   --font-weight: 700;
   --font-family: "Montserrat", sans-serif;
 }
-
+a {
+  color: var(--text-color);
+}
 .p-1 {
   padding: 10px;
 }

@@ -1,0 +1,17 @@
+.title__images-wrapper {
+  margin: 150px 0;
+  width: 100vw;
+  height: 90vh;
+
+  background-image: url("/images/header_img.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media (max-width: 600px) {
+  .title__images-wrapper {
+    width: 100%;
+    height: 40vh;
+  }
+}

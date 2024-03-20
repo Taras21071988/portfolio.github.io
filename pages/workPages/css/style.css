@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("/css/reset.css");
+@import url("/css/common.css");
+@import url("/css/button.css");
+@import url("/css/animations.css");
+@import url("travel.css");
+
+:root {
+  --main-fs: clamp(2.625rem, -2.375rem + 16vw, 6.625rem);
+  --second-fs: calc(var(--main-fs) / 2.5);
+}
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.main {
+  margin-top: 30vh;
+}
+.title {
+  font-size: var(--main-fs);
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: calc(var(--second-fs) / 2);
+  margin-bottom: 300px;
+}
+.descr__title {
+  font-size: var(--second-fs);
+}
+.descr__list {
+  padding-left: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  font-size: calc(var(--second-fs) / 2);
+  margin-bottom: 50px;
+}
+.descr__text {
+  font-size: calc(var(--second-fs) / 1.7);
+  margin-bottom: 100px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    overflow-x: hidden;
+  }
+}

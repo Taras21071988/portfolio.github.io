@@ -1,14 +1,3 @@
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: transparent;
-}
 .main {
   margin-top: 20vh;
 }
@@ -61,55 +50,3 @@ body::-webkit-scrollbar-thumb {
   color: var(--text-accent-color);
   transform: scale(1.1);
 }
-
-.home__link {
-  position: fixed;
-  top: 10vh;
-  right: 5vw;
-}
-
-.link__btn {
-  box-sizing: border-box;
-  padding: var(--btn-padding);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--default-btn-color);
-  font: var(--font-weight) var(--font-size) var(--font-family);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: var(--btn-transition);
-  overflow: hidden;
-}
-
-.link__btn span {
-  letter-spacing: var(--btn-letter-spacing);
-  transition: var(--btn-transition);
-  box-sizing: border-box;
-  position: relative;
-  background: inherit;
-}
-
-.link__btn span::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  background: inherit;
-}
-
-.link__btn:hover,
-.link__btn:focus {
-  background: black;
-}
-
-.link__btn:hover span,
-.link__btn:focus span {
-  color: var(--hover-btn-color);
-}
-
-.link__btn:hover span::before,
-.link__btn:focus span::before {
-  animation: chitchat linear both var(--btn-animation-duration);
-}
-

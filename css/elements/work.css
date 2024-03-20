@@ -1,0 +1,21 @@
+.work__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+  max-width: max-content;
+}
+.work__list-item {
+  transition: all 0.3s ease-in-out;
+}
+
+.work__list-item:hover {
+  padding-left: 15px;
+}
+.work__item-link {
+  letter-spacing: 0.175em;
+  font-size: clamp(3vw, 7vw, 10vw);
+}
+.work__item-subtitle {
+  color: var(--text-accent-color);
+  font-size: clamp(6px, 16px, 3vw);
+}
